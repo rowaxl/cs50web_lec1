@@ -1,0 +1,55 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#title {
+  text-align: center;
+}
+
+.photo-wrap {
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: 3px 3px 1px #333;
+  padding: 0;
+}
+.photo-wrap img {
+  width: 100%;
+  height: 100%;
+}
+.photo-wrap .overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: white;
+  opacity: 0.5;
+  position: absolute;
+  transition: all ease-in-out 0.2s;
+}
+.photo-wrap .overlay:hover {
+  opacity: 0;
+}
+
+.photo-wrap:hover {
+  background-color: none;
+}
+
+.photo-container {
+  background: linear-gradient(#e66465, #9198e5);
+  padding: 20px 50px;
+}
+
+@media (min-width: 1200px) {
+  .photo-container {
+    background: linear-gradient(#9198e5, #e66465);
+  }
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+footer .container {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
