@@ -8,6 +8,7 @@ body {
 
 #title {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .photo-wrap {
@@ -59,3 +60,81 @@ footer {
     text-align: center;
   }
 }
+
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+.gallery-wrap {
+  width: 60%;
+  margin: auto;
+}
+
+.card-img-overlay {
+  padding: 0;
+  background: rgba(112,66,20,0.7);
+  transition: all ease 0.5s;
+
+  .gallery-title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    transition: all ease 0.5s;
+  }
+
+  &:hover {
+    background: rgba(255,255,255,0.2);
+    cursor: pointer;
+
+    .gallery-title {
+      color: rgb(8, 30, 154);
+      text-shadow: 1px 1px white;
+      font-weight: 900;
+      font-size: 48px;
+      top: 45%;
+    }
+  }
+}
+

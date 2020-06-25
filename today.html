@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Gallery</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="">Today's Photo <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                  </a>
+
+                  <div class="dropdown-menu slideIn animate" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="index.html">Home</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="landscapes.html">Landscapes</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="peoples.html">Peoples</a>
+                      <div class="dropdown-divider"></div>
+                  </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+
+        <h2 id="title">Photo of today</h2>
+        <div class="container-fluid photo-container">
+            <div class="row">
+                <div class="photo-wrap col-lg-4 col-md-6 ml-auto">
+                    <div class="overlay" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<em>Bike against a wall</em> by <a href='https://unsplash.com/@xokvictor'>Victor Xok</a>"></div>
+                    <img src="https://images.unsplash.com/photo-1592985316521-c1cac1269b11?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" alt="wall with bicycle">
+                </div>
+                <div class="photo-wrap col-lg-4 col-md-6 ml-auto">
+                    <div class="overlay" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<em>A custom desk designed and built by me from birch</em> by <a href='https://unsplash.com/@lassiveh'>Lassi</a>"></div>
+                    <img src="https://images.unsplash.com/photo-1592990379370-f9dab5ff74c8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" alt="table with imac">
+                </div>
+                <div class="photo-wrap col-lg-4 col-md-6 ml-auto">
+                    <div class="overlay" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<em>Stars in the sky during night time photo</em> by <a href='https://unsplash.com/@nervum'>Jack B</a>"></div>
+                    <img src="https://images.unsplash.com/photo-1593000904207-7e529d2bb019?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="milky way">
+                </div>
+                <div class="photo-wrap col-lg-4 col-md-6 ml-auto">
+                    <div class="overlay" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<em>Cough, know the symptoms, help flatten the curve. Image created by Jack Adamson. Submitted for United Nations Global</em> by <a href='https://unsplash.com/@unitednations'>United Nations COVID-19 Response</a>"></div>
+                    <img src="https://images.unsplash.com/photo-1588615551542-3ffbfa70d15a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" alt="UN covid19 response">
+                </div>
+                <div class="photo-wrap col-lg-4 col-md-6 ml-auto">
+                    <div class="overlay" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<em>Water falls under cloudy sky during daytime photo</em> by <a href='https://unsplash.com/@buco_balkanessi'>Bucography</a>"></div>
+                    <img src="https://images.unsplash.com/photo-1592919920613-dc10469b4557?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1914&q=80" alt="zagreb airport">
+                </div>
+                <div class="photo-wrap col-lg-4 col-md-6 ml-auto">
+                    <div class="overlay" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<em>Silhouette of training passing on bridge during sunrise photo</em> by <a href='https://unsplash.com/@evitabrujita'>Eve M.</a>"></div>
+                    <img src="https://images.unsplash.com/photo-1568380553643-321f5ae5d698?ixlib=rb-1.2.1&auto=format&fit=crop&w=1782&q=80" alt="dusk and river">
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer mt-auto">
+            <div class="container">
+                <span class="text-muted">Photos are provided by <a href="https://unsplash.com/">Unsplash</a></span>
+            </div>
+        </footer>
+
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+    </body>
+</html>
