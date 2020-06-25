@@ -11,22 +11,23 @@ body {
   margin-bottom: 50px;
 }
 
-.select-gallery {
+%gallery {
   img {
     width: $photoWidth;
     height: $photoHeight;
   }
 }
 
+.select-gallery {
+  @extend %gallery;
+}
+
 .photo-wrap {
+  @extend %gallery;
+
   border: 2px solid rgba(0,0,0,0);
   box-shadow: 3px 3px 1px #333;
   padding: 0;
-
-  img {
-    width: $photoWidth;
-    height: $photoHeight;
-  }
 
   .overlay {
     width: 100%;
