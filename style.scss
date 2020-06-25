@@ -11,6 +11,13 @@ body {
   margin-bottom: 50px;
 }
 
+.select-gallery {
+  img {
+    width: $photoWidth;
+    height: $photoHeight;
+  }
+}
+
 .photo-wrap {
   border: 2px solid rgba(0,0,0,0);
   box-shadow: 3px 3px 1px #333;
@@ -46,8 +53,26 @@ body {
 }
 
 @media(min-width: 1200px) {
+  * {
+    font-size: 18px;
+  }
+
   .photo-container {
     background: linear-gradient(#9198e5, #e66465);
+  }
+}
+
+@media(max-width: 1200px) {
+  * {
+    font-size: 16px;
+  }
+
+  .card-img-overlay {
+    &:hover {
+      .gallery-title {
+        font-size: 36px !important;
+      }
+    }
   }
 }
 
@@ -106,7 +131,8 @@ footer {
 }
 
 .gallery-wrap {
-  width: 60%;
+  width: 80%;
+  min-width: 900px;
   margin: auto;
 }
 
