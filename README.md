@@ -3,6 +3,8 @@
 CS50 Web Programming with Python and JavaScript
 
 ## Overview
+![](overview.png)
+
 Photo gallaries with below themes:
 - Today's photo
 - Landscape
